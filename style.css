@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 50px;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 150%;
+}
+
+.container {
+    max-width: 100%;
+    width: 500px;
+    
+}
+
+.container .logo-main {
+    width: 45%;
+}
+
+.container .img {
+    margin-top: 5rem;
+    background-image: url(/images/illustration-mockups.svg);
+    background-size: 100%;
+    height: 345px;
+}
+
+.container .article h1 {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.container .article p {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.container .article .btn {
+    background-color: white;
+    font-size: 1.5rem;
+    margin: 2.5rem 4rem;
+    padding: 1.5rem 8rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 10px #4e4e4e;
+    font-family: "Poppins", sans-serif;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+}
+
+.container .social {
+    display: flex;
+    justify-content: center;
+    filter: invert(1);
+}
+
+.container .social .fb, .twitter {
+    margin-right: 1rem;
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: 100%;
+    }
+
+    .container {
+        margin-top: 20px;
+        display: flex;
+        max-width: 100%;
+        width: 1440px;
+        height: 968px;
+        position: relative;
+    }
+
+   .container .tag-img .logo-main {
+        width: 250px;
+   }
+
+    .container .tag-img .img {
+        margin-top: 5rem;
+        background-image: url(/images/illustration-mockups.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 968px;
+        width: 800px;
+    }
+
+    .container .article {
+        margin-left: 3.5rem;
+        margin-top: 5rem;
+    }
+
+    .container .article h1{
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .container .article p{
+        text-align: left;
+        font-size: 1.175rem;
+    }
+
+    .container .article .btn {
+        text-align: center;
+        padding: 1rem 0;
+        margin-left: 0;
+        width: 30%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .container .social {
+        float: none;
+        right: 50px;
+        bottom: 100px;
+        position: absolute;
+    }
+
+}
